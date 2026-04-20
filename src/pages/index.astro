@@ -1,0 +1,144 @@
+---
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>pavcast.ai | beyond the blueprint</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Jost:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-background bg-surface">
+  <!-- TopAppBar -->
+  <header class="glass-panel fixed top-0 w-full z-50 border-b border-white/5 h-16">
+    <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <h1 class="text-3xl font-semibold text-[#e2e2e3]" style="font-family: Jost, sans-serif; font-weight: 600; letter-spacing: -0.05em; text-transform: none;">
+          pavcast<span class="" style="color: rgb(45, 212, 191);">.</span>ai
+        </h1>
+      </div>
+    </div>
+  </header>
+  <main class="pt-24 px-6 max-w-7xl mx-auto space-y-16">
+    <!-- Hero Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-stretch">
+      <!-- Hero Image -->
+      <div class="w-full rounded-lg overflow-hidden glass-panel border border-white/10 shadow-2xl order-1 flex">
+        <img alt="Portrait of Dr Pawel Lee" class="w-full h-full object-cover transition-opacity duration-700" src="/headshot.jpeg" style=""/>
+      </div>
+      <!-- Podcast Blurb & Social Grid -->
+      <div class="glass-panel rounded-lg border border-white/10 p-8 lg:p-12 space-y-8 order-2 flex flex-col justify-center">
+        <div class="space-y-4">
+          <h2 class="font-headline text-4xl lg:text-6xl font-bold text-secondary leading-[1.1] tracking-tighter uppercase" style="">
+            <div class="text-white normal-case" style="font-family: Jost, sans-serif; font-weight: 600; letter-spacing: -0.05em;">pavcast<span style="color: rgb(45, 212, 191);">.</span></div>
+            <div class="text-primary text-lg lg:text-xl font-normal normal-case mt-2 opacity-80" style='font-family: "JetBrains Mono", monospace;'>beyond the blueprint</div>
+          </h2>
+          <p class="font-body text-on-surface-variant text-lg leading-relaxed opacity-90 max-w-xl" style="">
+            Dr Pawel Lee navigates the messy middle and discusses successes, failures, and journeys of self-discovery in a data-driven world.
+          </p>
+        </div>
+        <!-- 2x2 Platform Grid -->
+        <div class="grid grid-cols-2 gap-4">
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/@pavcast" target="_blank" rel="noopener noreferrer" class="bg-primary/10 py-3 px-4 flex items-center justify-between gap-2 rounded-lg border border-primary/20 hover:border-primary/50 transition-all group active:scale-95" style="">
+            <div class="flex items-center gap-3">
+              <svg class="w-[18px] h-[18px] text-primary transition-all fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+              <span class="font-label text-[10px] font-bold tracking-[0.2em] uppercase text-primary transition-colors" style="">YOUTUBE</span>
+            </div>
+            <span class="material-symbols-outlined text-xs text-primary/50 group-hover:text-primary transition-colors" style="">arrow_outward</span>
+          </a>
+          <!-- Spotify -->
+          <button class="glass-panel py-3 px-4 flex items-center justify-between gap-2 rounded-lg border border-white/10 hover:border-primary/50 transition-all group active:scale-95" style="">
+            <div class="flex items-center gap-3">
+              <svg class="w-[18px] h-[18px] opacity-40 text-white group-hover:opacity-100 group-hover:text-primary transition-all fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm5.508 17.303c-.216.354-.675.465-1.03.249-2.815-1.721-6.36-2.112-10.537-1.157-.403.093-.813-.162-.906-.565-.093-.403.162-.813.565-.906 4.571-1.045 8.49-.595 11.658 1.343.354.217.465.676.25 1.036zm1.47-3.26c-.271.442-.848.583-1.289.312-3.221-1.979-8.131-2.553-11.939-1.396-.499.151-1.026-.134-1.177-.633-.151-.499.134-1.026.633-1.177 4.354-1.321 9.774-.676 13.46 1.585.44.271.583.847.312 1.309zm.126-3.407C15.421 8.354 9.315 8.15 5.768 9.228a1.143 1.143 0 0 1-1.357-1.782C8.544 6.071 15.297 6.301 19.539 8.818c.516.306.685.975.379 1.491-.306.516-.975.685-1.491.379z"></path></svg>
+              <span class="font-label text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant group-hover:text-primary transition-colors" style="">SPOTIFY</span>
+            </div>
+            <span class="material-symbols-outlined text-xs text-white/20 group-hover:text-primary transition-colors" style="">arrow_outward</span>
+          </button>
+          <!-- Apple Podcasts -->
+          <button class="glass-panel py-3 px-4 flex items-center justify-between gap-2 rounded-lg border border-white/10 hover:border-primary/50 transition-all group active:scale-95" style="">
+            <div class="flex items-center gap-3">
+              <svg class="w-[24px] h-[24px] opacity-40 text-white group-hover:opacity-100 group-hover:text-primary transition-all fill-current" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <path fill="currentColor" d="M174.6,130.1c0,13.6-11,24.6-24.6,24.6s-24.6-11-24.6-24.6c0-13.6,11-24.6,24.6-24.6 S174.6,116.6,174.6,130.1z"/>
+  
+  <path fill="currentColor" d="M175.7,181.1c-0.4-3.6-1.6-6.2-4-8.6c-4.5-4.7-12.4-7.8-21.7-7.8c-9.3,0-17.2,3-21.7,7.8 c-2.3,2.5-3.6,5-4,8.6c-0.8,7-0.3,13,0.5,22.7c0.8,9.2,2.3,21.5,4.2,33.9c1.4,8.9,2.5,13.7,3.5,17.1c1.7,5.6,7.8,10.4,17.5,10.4 c9.7,0,15.9-4.9,17.5-10.4c1-3.4,2.1-8.2,3.5-17.1c1.9-12.5,3.4-24.7,4.2-33.9C176.1,194.1,176.5,188.1,175.7,181.1z"/>
+  
+  <path fill="currentColor" d="M149.7,33.2C92.3,33.4,45.3,80,44.5,137.4c-0.6,46.5,29.1,86.3,70.6,100.9 c1,0.4,2-0.5,1.9-1.5c-0.5-3.6-1.1-7.2-1.5-10.8c-0.2-1.3-1-2.3-2.1-2.9c-32.8-14.3-55.7-47.2-55.3-85.3 c0.5-50,41.3-90.7,91.2-91.1c51.1-0.4,92.8,41,92.8,92c0,37.7-22.8,70.1-55.3,84.4c-1.2,0.5-2,1.6-2.1,2.9 c-0.5,3.6-1,7.2-1.5,10.8c-0.2,1.1,0.9,1.9,1.9,1.5c41.1-14.4,70.6-53.6,70.6-99.6C255.5,80.5,208,33.1,149.7,33.2z"/>
+  
+  <path fill="currentColor" d="M147.3,68.2c-37.4,1.4-67.4,32.3-67.9,69.7c-0.3,24.6,12,46.4,30.9,59.3 c0.9,0.6,2.2-0.1,2.2-1.2c-0.3-4.3-0.3-8.1-0.1-12.1c0.1-1.3-0.4-2.5-1.4-3.4c-11.5-10.8-18.5-26.2-18.1-43.2 c0.8-30,24.9-54.4,54.9-55.6c32.6-1.3,59.4,24.9,59.4,57.1c0,16.4-7,31.2-18.1,41.7c-0.9,0.9-1.4,2.1-1.4,3.4 c0.2,3.9,0.1,7.7-0.1,12c-0.1,1.1,1.2,1.9,2.2,1.2c18.6-12.7,30.9-34.2,30.9-58.4C220.8,98.9,187.5,66.6,147.3,68.2z"/>
+</svg>
+              <span class="font-label text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant group-hover:text-primary transition-colors" style="">APPLE</span>
+            </div>
+            <span class="material-symbols-outlined text-xs text-white/20 group-hover:text-primary transition-colors" style="">arrow_outward</span>
+          </button>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/pawel-lee/" target="_blank" rel="noopener noreferrer" class="glass-panel py-3 px-4 flex items-center justify-between gap-2 rounded-lg border border-white/10 hover:border-primary/50 transition-all group active:scale-95" style="">
+            <div class="flex items-center gap-3">
+              <svg class="w-[18px] h-[18px] opacity-40 text-white group-hover:opacity-100 group-hover:text-primary transition-all fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.454C23.204 24 24 23.227 24 22.271V1.729C24 .774 23.204 0 22.225 0z"></path></svg>
+              <span class="font-label text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant group-hover:text-primary transition-colors" style="">LINKEDIN</span>
+            </div>
+            <span class="material-symbols-outlined text-xs text-white/20 group-hover:text-primary transition-colors" style="">arrow_outward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Latest Episode Section -->
+    <section class="space-y-8">
+      <div class="flex items-center justify-between">
+        <span class="font-headline text-4xl lg:text-6xl font-bold text-white lowercase tracking-tighter" style="">latest episode</span>
+        <div class="h-[1px] flex-1 bg-white/10 ml-6"></div>
+      </div>
+      <div class="glass-panel rounded-lg overflow-hidden border border-white/10 grid grid-cols-1 md:grid-cols-12 items-center">
+        <!-- Large Thumbnail -->
+        <a href="https://www.youtube.com/@pavcast" target="_blank" rel="noopener noreferrer" class="md:col-span-7 relative w-full overflow-hidden border-b md:border-b-0 md:border-r border-white/10 group self-stretch aspect-video block">
+          <img alt="Portrait of a man with a microphone" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="/ep05.png" style=""/>
+          <div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+          <!-- Play Button Overlay -->
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-2xl scale-90 group-hover:scale-100 transition-transform">
+              <span class="material-symbols-outlined text-3xl" style='font-variation-settings: "FILL" 1;'>play_arrow</span>
+            </div>
+          </div>
+        </a>
+        <div class="md:col-span-5 p-8 lg:p-12 flex flex-col justify-center space-y-6">
+          <div class="space-y-3">
+            <div class="flex items-center gap-3 text-on-surface-variant font-label text-[10px] tracking-widest uppercase opacity-80">
+              <span class="" style="">Apr 22, 2026</span>
+              <span class="text-primary" style="">•</span>
+              <span class="" style="">21 MINS</span>
+            </div>
+            <h3 class="font-headline text-2xl lg:text-3xl font-bold text-secondary leading-tight tracking-tight lowercase" style='font-family: "JetBrains Mono", monospace;'>05 | academia vs production</h3>
+          </div>
+          <p class="font-body text-sm lg:text-base text-on-surface-variant leading-relaxed opacity-90" style="">
+            In this session, we explore how the best practices from university translate to the rigours of enterprise deployment. We also discuss the impact of LLMs on the entry level positions. Do juniors who grew up in an AI native world have a better vision than executives?
+          </p>
+          <div class="pt-4 flex flex-col sm:flex-row gap-4">
+            <a href="https://www.youtube.com/@pavcast" target="_blank" rel="noopener noreferrer" class="flex-1 bg-primary text-on-primary py-4 rounded-lg flex items-center justify-center gap-3 active:scale-95 transition-all shadow-lg shadow-primary/20 group hover:opacity-90" style="">
+              <span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform" data-icon="play_arrow" data-weight="fill" style='font-variation-settings: "FILL" 1;'>play_arrow</span>
+              <span class="font-label text-[10px] font-extrabold tracking-[0.2em] uppercase" style="">WATCH NOW</span>
+            </a>
+            <!-- <button class="px-6 py-4 flex items-center justify-center gap-2 text-secondary font-label text-[10px] tracking-widest hover:text-primary transition-colors uppercase" style="">
+              <span class="material-symbols-outlined text-lg" style="">description</span>
+              <span class="" style="">SHOW NOTES</span>
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Signature Footer -->
+  <footer class="pt-[120px] pb-16 px-6 max-w-7xl mx-auto flex flex-col items-center">
+    <div class="w-8 h-[1px] bg-white/10 mb-8"></div>
+    <p class="text-center text-[#3f3f46] uppercase font-bold tracking-[0.4em] select-none" style="font-family: 'JetBrains Mono', monospace; font-size: 7.5px;">
+      Dr Pawel Lee <span class="text-[#2dd4bf] opacity-20 mx-1" style="">|</span> Analytics Institute of Ireland Practitioner of the Year 2023 <span class="text-[#2dd4bf] opacity-20 mx-1" style="">|</span> Ireland <span class="text-[#2dd4bf] opacity-20 mx-1" style="">|</span> pavcast.ai
+    </p>
+  </footer>
+</body>
+</html>

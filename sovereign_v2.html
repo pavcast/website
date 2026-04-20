@@ -1,0 +1,213 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Jost:wght@600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#490006",
+                    "on-surface-variant": "#adaaad",
+                    "inverse-primary": "#006b60",
+                    "on-secondary-fixed": "#3e4041",
+                    "background": "#0e0e10",
+                    "on-secondary-fixed-variant": "#5a5c5d",
+                    "primary-fixed": "#5bf4de",
+                    "secondary": "#e2e2e3",
+                    "on-primary-fixed-variant": "#006358",
+                    "surface-container-lowest": "#000000",
+                    "inverse-on-surface": "#565457",
+                    "surface": "#0e0e10",
+                    "tertiary-fixed": "#1dc0fe",
+                    "inverse-surface": "#fcf8fb",
+                    "primary-fixed-dim": "#48e5d0",
+                    "surface-tint": "#5bf4de",
+                    "on-tertiary": "#00415a",
+                    "secondary-dim": "#d4d4d5",
+                    "primary": "#5bf4de",
+                    "on-surface": "#f9f5f8",
+                    "on-error-container": "#ffa8a3",
+                    "on-primary": "#00594f",
+                    "on-tertiary-container": "#00374c",
+                    "tertiary-dim": "#00b2ed",
+                    "tertiary": "#67ccff",
+                    "on-tertiary-fixed-variant": "#004058",
+                    "surface-container-high": "#1f1f22",
+                    "primary-dim": "#48e5d0",
+                    "error-dim": "#d7383b",
+                    "surface-container-low": "#131315",
+                    "on-tertiary-fixed": "#001e2b",
+                    "tertiary-fixed-dim": "#00b2ed",
+                    "on-background": "#f9f5f8",
+                    "error-container": "#9f0519",
+                    "outline-variant": "#48474a",
+                    "surface-dim": "#0e0e10",
+                    "surface-variant": "#262528",
+                    "secondary-fixed": "#e2e2e3",
+                    "on-secondary": "#505253",
+                    "surface-container-highest": "#262528",
+                    "tertiary-container": "#1dc0fe",
+                    "surface-container": "#19191c",
+                    "on-primary-container": "#003a33",
+                    "secondary-fixed-dim": "#d4d4d5",
+                    "on-primary-fixed": "#00443c",
+                    "secondary-container": "#454748",
+                    "error": "#ff716c",
+                    "on-secondary-container": "#d0d0d1",
+                    "primary-container": "#11c9b4",
+                    "surface-bright": "#2c2c2f",
+                    "outline": "#767577"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Geist"],
+                    "body": ["Geist"],
+                    "label": ["Geist"]
+            }
+          },
+        },
+      }
+    </script>
+<style>body {
+    background-color: #0e0e10;
+    background-image: url(https://lh3.googleusercontent.com/aida/ADBb0uiF-oh-_sf91b5mE2l1hBph7sl_cBaJI-66uY-Gz4EzHdVBxvVCC-FCJiOPh-J-Nyo4XsshtXvOlB5ho5CZF2AH8kwJLcLhVspQxCm-ca-PMb7N1kiBuSMRWwf-jAud_Pqh0eA-E1jxDG3t9cYz0l79kh5oT9cFpUkAy0eNU0zJKr8PG-QQMkxfWSJSPyZMp3m7S4Jq7mUp8Ym6iqjWbEdlL9kA334-usXeTQ7bEXxn7__zNkS8Map0ywyhdDxOUqyHCGda5XGxMA);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #f9f5f8;
+    font-family: "Geist", sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px)
+    }
+.letter-spacing-tighter {
+    letter-spacing: -0.05em
+    }
+.letter-spacing-widest {
+    letter-spacing: 0.2em
+    }</style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopAppBar -->
+<header class="glass-panel fixed top-0 w-full z-50 border-b border-white/5 h-16">
+<div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
+<div class="flex items-center gap-2">
+<h1 class="text-xl font-semibold text-[#e2e2e3] flex items-center gap-1" style="font-family: Jost, sans-serif; font-weight: 600; letter-spacing: -0.05em; text-transform: none;">pavcast<span class="" style="color: rgb(45, 212, 191);">.</span>ai</h1>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-7xl mx-auto space-y-16">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-stretch">
+<!-- Hero Image -->
+<div class="w-full rounded-lg overflow-hidden glass-panel border border-white/10 shadow-2xl order-1 flex">
+<img alt="Professional portrait of a man" class="w-full h-full object-cover transition-opacity duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uhg2GVZXMvOr0piTz5mJfMrdLLmaY8jyBfVmrpWcqrQabsUaQEKMEbM49b0tIosVsK5SemDWH0AsgCZREAYpHt9afjDgfm61CXNITL6NGb_Va-LHCOpnEPD5UnrlqQ7VtlT4Qr4SfeMD91GraW4scMtAec33iyrm2Mp1c90FZkz5SMFdUPbfvKWj_RDslO2kj8c9Q-pJF9FrzXydVv06JRs2V175WNM4BokgLaIjvmS6d9-np4cBaSngiZ6gb4zmxvo9akWGe6Owrs" style="">
+</div>
+<!-- Podcast Blurb & Social Grid -->
+<div class="glass-panel rounded-lg border border-white/10 p-8 lg:p-12 space-y-8 order-2 flex flex-col justify-center">
+<div class="space-y-4">
+<h2 class="font-headline text-4xl lg:text-6xl font-bold text-secondary leading-[1.1] tracking-tighter uppercase" style=""><div class="text-white font-headline normal-case" style="">pavcast.</div><div class="text-primary text-lg lg:text-xl font-normal normal-case mt-2 opacity-80" style="font-family: &quot;JetBrains Mono&quot;, monospace;">beyond the blueprint</div></h2>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed opacity-90 max-w-xl" style="">Dr Pawel Lee navigates the messy middle and discusses successes, failures, and journeys of self-discovery in a data-driven world.</p>
+</div>
+<!-- 2x2 Platform Grid -->
+<div class="grid grid-cols-2 gap-4"><!-- YouTube -->
+<button class="glass-panel py-3 px-4 flex items-center justify-between gap-2 rounded-lg border border-white/10 hover:border-primary/50 transition-all group active:scale-95" style="">
+<div class="flex items-center gap-3">
+<svg class="w-[18px] h-[18px] opacity-40 text-white group-hover:opacity-100 group-hover:text-primary transition-all fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+<span class="font-label text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant group-hover:text-primary transition-colors" style="">YOUTUBE</span>
+</div>
+<span class="material-symbols-outlined text-xs text-white/20 group-hover:text-primary transition-colors" style="">arrow_outward</span>
+</button>
+<!-- Spotify -->
+<button class="glass-panel py-3 px-4 flex items-center justify-between gap-2 rounded-lg border border-white/10 hover:border-primary/50 transition-all group active:scale-95" style="">
+<div class="flex items-center gap-3">
+<svg class="w-[18px] h-[18px] opacity-40 text-white group-hover:opacity-100 group-hover:text-primary transition-all fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm5.508 17.303c-.216.354-.675.465-1.03.249-2.815-1.721-6.36-2.112-10.537-1.157-.403.093-.813-.162-.906-.565-.093-.403.162-.813.565-.906 4.571-1.045 8.49-.595 11.658 1.343.354.217.465.676.25 1.036zm1.47-3.26c-.271.442-.848.583-1.289.312-3.221-1.979-8.131-2.553-11.939-1.396-.499.151-1.026-.134-1.177-.633-.151-.499.134-1.026.633-1.177 4.354-1.321 9.774-.676 13.46 1.585.44.271.583.847.312 1.309zm.126-3.407C15.421 8.354 9.315 8.15 5.768 9.228a1.143 1.143 0 0 1-1.357-1.782C8.544 6.071 15.297 6.301 19.539 8.818c.516.306.685.975.379 1.491-.306.516-.975.685-1.491.379z"></path></svg>
+<span class="font-label text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant group-hover:text-primary transition-colors" style="">SPOTIFY</span>
+</div>
+<span class="material-symbols-outlined text-xs text-white/20 group-hover:text-primary transition-colors" style="">arrow_outward</span>
+</button>
+<!-- Apple Podcasts -->
+<button class="glass-panel py-3 px-4 flex items-center justify-between gap-2 rounded-lg border border-white/10 hover:border-primary/50 transition-all group active:scale-95" style="">
+<div class="flex items-center gap-3">
+<svg class="w-[18px] h-[18px] opacity-40 text-white group-hover:opacity-100 group-hover:text-primary transition-all fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 18.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm2.5-5.5a2.5 2.5 0 0 1-5 0V9a2.5 2.5 0 0 1 5 0v4zm1.5-2a4 4 0 0 0-8 0v4a4 4 0 0 0 8 0v-4zm2-2a6 6 0 0 0-12 0v8a6 6 0 0 0 12 0v-8z"></path></svg>
+<span class="font-label text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant group-hover:text-primary transition-colors" style="">APPLE</span>
+</div>
+<span class="material-symbols-outlined text-xs text-white/20 group-hover:text-primary transition-colors" style="">arrow_outward</span>
+</button>
+<!-- LinkedIn -->
+<button class="glass-panel py-3 px-4 flex items-center justify-between gap-2 rounded-lg border border-white/10 hover:border-primary/50 transition-all group active:scale-95" style="">
+<div class="flex items-center gap-3">
+<svg class="w-[18px] h-[18px] opacity-40 text-white group-hover:opacity-100 group-hover:text-primary transition-all fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.454C23.204 24 24 23.227 24 22.271V1.729C24 .774 23.204 0 22.225 0z"></path></svg>
+<span class="font-label text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant group-hover:text-primary transition-colors" style="">LINKEDIN</span>
+</div>
+<span class="material-symbols-outlined text-xs text-white/20 group-hover:text-primary transition-colors" style="">arrow_outward</span>
+</button></div>
+</div>
+</section>
+<!-- Latest Episode Section -->
+<section class="space-y-8">
+<div class="flex items-center justify-between">
+<span class="font-headline text-4xl lg:text-6xl font-bold text-white lowercase tracking-tighter" style="">latest episode</span>
+<div class="h-[1px] flex-1 bg-white/10 ml-6"></div>
+</div>
+<div class="glass-panel rounded-lg overflow-hidden border border-white/10 grid grid-cols-1 md:grid-cols-12 items-center">
+<!-- Large Thumbnail -->
+<div class="md:col-span-7 relative w-full overflow-hidden border-b md:border-b-0 md:border-r border-white/10 group self-stretch aspect-video">
+<img alt="Portrait of a man with a microphone" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ujijOFYw_teP3IqULDwsSSCf2Sm55EXHUoflFpNDlnUkFCTrGm5jeITM0chnw_QcbcSPfBAggfoHELQ0bi62ME6r3bv9e88KNgoQdEbi0NEk86YgvO_gKTvpsK8LS4mDN1UvrV1zyCTVf7iCDRzMYgLI3lAU_i6PMjj-ERk3hc-nV6emOoWnjn1kVu-eF7rn36-GbtdN9uOVNiomYwAdoo5glhKT33x3VRTjI3gC2H_QyJtCkiIj4tRJgWAqmySXfv_XHohccGH9NA" style="">
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+<!-- Play Button Overlay -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-2xl scale-90 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 p-8 lg:p-12 flex flex-col justify-center space-y-6">
+<div class="space-y-3">
+<div class="flex items-center gap-3 text-on-surface-variant font-label text-[10px] tracking-widest uppercase opacity-80">
+<span class="" style="">Apr 22, 2026</span>
+<span class="text-primary" style="">•</span>
+<span class="" style="">21 MINS</span>
+</div>
+<h3 class="font-headline text-2xl lg:text-3xl font-bold text-secondary leading-tight tracking-tight lowercase" style="font-family: &quot;JetBrains Mono&quot;, monospace;">05 | academia vs production</h3>
+</div>
+<p class="font-body text-sm lg:text-base text-on-surface-variant leading-relaxed opacity-90" style="">
+                        In this session, we explore how the best practices from university translate to the rigours of enterprise deployment. We also discuss the impact of LLMs on the entry level positions. Do juniors who grew up in an AI native world have a better vision than executives?</p>
+<div class="pt-4 flex flex-col sm:flex-row gap-4">
+<button class="flex-1 bg-primary text-on-primary py-4 rounded-lg flex items-center justify-center gap-3 active:scale-95 transition-all shadow-lg shadow-primary/20 group" style="">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform" data-icon="play_arrow" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+<span class="font-label text-[10px] font-extrabold tracking-[0.2em] uppercase" style="">WATCH NOW</span>
+</button>
+<button class="px-6 py-4 flex items-center justify-center gap-2 text-secondary font-label text-[10px] tracking-widest hover:text-primary transition-colors uppercase" style="">
+<span class="material-symbols-outlined text-lg" style="">description</span>
+<span class="" style="">SHOW NOTES</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Signature Footer -->
+<footer class="pt-[120px] pb-16 px-6 max-w-7xl mx-auto flex flex-col items-center">
+<div class="w-8 h-[1px] bg-white/10 mb-8"></div>
+<p class="text-center text-[#3f3f46] uppercase font-bold tracking-[0.4em] select-none" style="font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 7.5px;">
+        Dr Pawel Lee <span class="text-[#2dd4bf] opacity-20 mx-1" style="">|</span> Analytics Institute of Ireland Practitioner of the Year 2023 <span class="text-[#2dd4bf] opacity-20 mx-1" style="">|</span> Ireland <span class="text-[#2dd4bf] opacity-20 mx-1" style="">|</span> pavcast.ai
+    </p>
+</footer>
+</body></html>
