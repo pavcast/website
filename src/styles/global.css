@@ -25,7 +25,10 @@
 
 @layer base {
 
-  html,
+  html {
+    background-color: #0e0e10;
+  }
+
   body {
     background-color: transparent;
     color: #f9f5f8;
